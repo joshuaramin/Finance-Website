@@ -1,0 +1,437 @@
+$textColor: #fff;
+$backgroundColor: #50c878;
+$textHeadingColor: #50c878;
+$placeHolderColor: #ccc;
+.container {
+  width: 100%;
+  height: auto;
+}
+.header {
+  width: 100%;
+  height: 5rem;
+  .containerHead {
+    width: 100%;
+    height: 5rem;
+  }
+
+  .nav {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    .headTitle {
+      font-weight: 500;
+      font-size: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+    .ul {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+    .li {
+      list-style: none;
+      margin: 0 10px;
+      font-weight: 400;
+      background-color: $backgroundColor;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+      height: 2rem;
+      width: 6rem;
+    }
+    button {
+      font-size: 1.1rem;
+      text-align: center;
+      color: $textColor;
+      border: none;
+      background-color: $backgroundColor;
+      cursor: pointer;
+    }
+  }
+}
+
+.homeContainer {
+  width: 100%;
+  height: auto;
+  padding: 0 0;
+  .supportCon {
+    width: 100%;
+    background-image: url("/images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .main {
+    width: 100%;
+    height: 45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .headings {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .mainAdd {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        .headingsTitle {
+          font-size: 2.5rem;
+          text-transform: uppercase;
+          margin: 0;
+          color: $textHeadingColor;
+        }
+        .headingsSubTitle {
+          margin: 5px 0;
+          font-size: 1.2rem;
+          color: $textColor;
+        }
+        .headingBtn {
+          margin: 5px 0;
+          width: 10rem;
+          height: 4rem;
+          border: none;
+          outline: none;
+          background-color: $backgroundColor;
+          color: $textColor;
+          border-radius: 5px;
+          font-size: 1rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+.sectionPhone {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(1, auto);
+  .sectionPhoneHeading,
+  .sectionPhoneImage {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+  }
+  .sectionAddPhone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 45rem;
+    height: 100%;
+    padding: 15px;
+  }
+  .sectionPhoneTitle,
+  .sectionPhoneSubTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $textHeadingColor;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    text-transform: uppercase;
+  }
+  .sectionPhoneSubTitle {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #000;
+  }
+}
+
+.about {
+  width: 100%;
+  padding: 0 10px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(1, auto);
+  .aboutPic {
+    height: auto;
+    width: 100%;
+    background-color: $textColor;
+  }
+  .aboutPic,
+  .aboutPara {
+    width: 100%;
+    height: auto;
+    text-align: justify;
+    color: $textHeadingColor;
+  }
+  .addAbout {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+  .abouTitle {
+    margin: 0;
+    padding: 0;
+  }
+}
+.plans {
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+  .plansTitle {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Segou UI";
+    font-weight: 500;
+  }
+}
+.plansContainer {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(1, auto);
+  justify-content: center;
+  align-items: center;
+  .packageContainer {
+    width: 18rem;
+    height: 22rem;
+    margin: 0 20px;
+    border-radius: 11px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    background-color: $backgroundColor;
+    .packageDetails {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .packageTitle {
+        text-transform: uppercase;
+        margin: 10px 0;
+      }
+      .packageTitle,
+      .packageAmount,
+      .packagedescription {
+        margin: 2px 0;
+        padding: 0 10px;
+        color: $textColor;
+      }
+      .packageAmount {
+        font-size: 1.2rem;
+      }
+      .packagedescription {
+        font-size: 0.9rem;
+        width: 100%;
+      }
+    }
+    .logo {
+      width: 8rem;
+      height: 8rem;
+      border-radius: 100px;
+      box-shadow: 0px 0px 3px 0px rgb(158, 158, 158);
+      background-color: $textColor;
+    }
+  }
+}
+
+.open {
+  width: 100%;
+  height: auto;
+  padding: 0 10px;
+}
+.openContainer {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(1, auto);
+  font-family: sans-serif;
+  .stepsTitles {
+    font-family: "Segoe UI";
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .steps {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .guideSteps {
+    width: 100%;
+    height: auto;
+    .stepg1 {
+      width: 100%;
+      height: 5rem;
+      border-left: 10px solid $backgroundColor;
+      display: flex;
+      justify-content: flex-start;
+      align-content: center;
+      flex-direction: column;
+      padding: 0 10px;
+      margin: 5px 0;
+      .stepTitle {
+        font-size: 1.3rem;
+        font-weight: 500;
+        margin-bottom: 0;
+      }
+      .stepPara {
+        margin: 0;
+      }
+    }
+  }
+  .laptopImage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.help {
+  width: 100%;
+  height: 23rem;
+  padding: 0 10px;
+  margin: 10px 0;
+  .helpTitle {
+    font-weight: 500;
+    font-family: "Segoe UI";
+    margin-bottom: 5px;
+  }
+  form {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .HelpContainer {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .inputHelp,
+    .inputTextArea {
+      width: 100%;
+      height: 4rem;
+      margin: 10px 0;
+      border: none;
+      box-shadow: 0px 0px 2px 0px #000;
+      border-radius: 5px;
+      padding: 0 10px;
+    }
+    ::placeholder {
+      padding: 10px;
+      font-weight: 500;
+      color: #ccc;
+    }
+    .inputTextArea {
+      width: 100%;
+      height: 10rem;
+      min-height: 10rem;
+      min-width: 100%;
+      max-width: 100%;
+    }
+    ::placeholder {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    .SubmitBtn {
+      width: 100%;
+      margin: 5px 0;
+      height: 3rem;
+      font-size: 1.1rem;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      background-color: $backgroundColor;
+      color: $textColor;
+    }
+  }
+}
+.footer {
+  width: 100%;
+  height: 3rem;
+  background-color: $backgroundColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $textColor;
+}
+
+@media (max-width: 1100px) {
+  .sectionPhone {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(1, auto);
+    height: auto;
+    .sectionAddPhone {
+      display: flex;
+      width: 100%;
+    }
+    .sectionPhoneTitle {
+      font-size: 2rem;
+    }
+  }
+
+  .about,
+  .plansContainer {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(1, auto);
+  }
+  .plansContainer {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(1, auto);
+    .packageContainer {
+      margin: 5px 10px;
+    }
+  }
+  .openContainer {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(1, auto);
+  }
+  .faqsCon {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .plansContainer {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(1, auto);
+  }
+  .openContainer {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(1, auto);
+  }
+  .faqs {
+    width: 100%;
+  }
+}
